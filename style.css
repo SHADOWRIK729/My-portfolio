@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0a1a24;
+  color: white;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {  
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav .active {
+  color: #00c3ff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  min-height: 90vh;
+}
+
+/* Text Content */
+.content {
+  max-width: 500px;
+}
+
+.content h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.content h1 span {
+  color: #00c3ff;
+}
+
+.content h3 {
+  color: #00c3ff;
+  margin-bottom: 15px;
+}
+
+.content p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.primary {
+  background: #00c3ff;
+  color: black;
+}
+
+.outline {
+  background: transparent;
+  border: 2px solid #00c3ff;
+  color: #00c3ff;
+}
+
+/* Social Icons */
+.socials a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #00c3ff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 10px;
+  color: #00c3ff;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  background: #00c3ff;
+  color: black;
+}
+
+/* Image */
+.image img {
+  animation: slideLeft 2s ease forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.image img {
+  transition: all 0.4s ease;
+}
+
+.image img:hover {
+  transform: translateX(-15px) scale(1.05);
+  box-shadow: 0 0 25px #00c3ff;
+}
+.image img {
+  animation: slideLeft 1s ease;
+  transition: all 0.4s ease;
+}
+/* GENERAL */
+body {
+  background: #0a1a24;
+  color: white;
+  font-family: 'Segoe UI';
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+nav a {
+  margin-left: 20px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+nav a.active,
+nav a:hover {
+  color: #00c3ff;
+}
+
+/* ABOUT */
+.about-container {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  gap: 40px;
+}
+
+.about-img img {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.about-text span {
+  color: #00c3ff;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  padding: 60px;
+  text-align: center;
+}
+
+.portfolio-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #122a3a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #00c3ff;
+}
+
+/* CONTACT */
+.contact {
+  padding: 60px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+input, textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background: #00c3ff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
